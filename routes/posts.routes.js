@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res, next) => {
-	res.json('All good in here');
+	res.json('this gets posts');
 });
 
 module.exports = router;
