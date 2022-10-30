@@ -20,6 +20,12 @@ const userSchema = new Schema(
 			type: String,
 			required: [true, 'Password is required.'],
 		},
+		avatar: String,
+		userType: {
+			type: String,
+			enum: ['user', 'superUser', 'admin'],
+		},
+		favourite: [{ type: Schema.Types.ObjectId, ref: 'Post' }],
 	},
 	{
 		timestamps: true,
