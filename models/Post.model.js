@@ -21,6 +21,7 @@ const userSchema = new Schema(
 		mood: { type: [String] },
 		distance: Number,
 		length: Number,
+		location: String,
 	},
 	{
 		timestamps: true,
