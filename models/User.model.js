@@ -25,6 +25,8 @@ const userSchema = new Schema(
 			type: String,
 			enum: ['user', 'superUser', 'admin'],
 		},
+		firstName: String,
+		lastName: String,
 		favourite: [{ type: Schema.Types.ObjectId, ref: 'Post' }],
 	},
 	{

@@ -1,0 +1,32 @@
+[
+	{
+		"email": "test@example.com",
+		"username": "tadej",
+		"firstName": "Tadej",
+		"lastName": "Pogacar",
+		"avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a9/2022_Tour_of_Slovenia_%28Stage_3%2C_Tadej_Poga%C4%8Dar_celebrating_victory_on_Celje_Castle_v2%29.jpg",
+		"password": "123",
+		"userType": "superUser",
+		"favourite": []
+	},
+	{
+		"email": "test@example.com",
+		"username": "mvdp",
+		"firstName": "Mathieu",
+		"lastName": "van der Poel",
+		"avatar": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mathieu_van_der_Poel_Paris-Roubaix_2022.jpg",
+		"password": "123",
+		"userType": "superUser",
+		"favourite": []
+	},
+	{
+		"email": "test@example.com",
+		"username": "wout",
+		"firstName": "Wout",
+		"lastName": "van Aert",
+		"avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgcbVsbeHf-gTbjMIZodrTWsZn19XXtat92BpDNPgffU6WKrVD",
+		"password": "123",
+		"userType": "superUser",
+		"favourite": []
+	}
+]

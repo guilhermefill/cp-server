@@ -22,6 +22,7 @@ const userSchema = new Schema(
 		distance: Number,
 		length: Number,
 		location: String,
+		text: String,
 	},
 	{
 		timestamps: true,
