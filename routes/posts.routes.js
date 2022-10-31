@@ -12,4 +12,14 @@ router.get('/', async (req, res, next) => {
 	}
 });
 
+router.get('/details/:postId', async (req, res, next) => {
+	const { postId } = req.params;
+	try {
+		const foundFost = await Post.findById(postId).populate('creator');
+		res.json(foundFost);
+	} catch (error) {
+		res.json(error);
+	}
+});
+
 module.exports = router;
