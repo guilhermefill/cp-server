@@ -1,7 +1,15 @@
 const router = require('express').Router();
 
-router.get('/', (req, res, next) => {
-	res.json('this gets posts');
+const User = require('../models/User.model');
+const Post = require('../models/Post.model');
+
+router.get('/', async (req, res, next) => {
+	try {
+		const posts = await Post.find().populate('creator');
+		res.json(posts);
+	} catch (error) {
+		res.json(error);
+	}
 });
 
 module.exports = router;
